@@ -32,9 +32,9 @@
 
 ---
 ## RDBMS와 NoSQL의 차이는 무엇인가요?
-RDBMS는 관계형 모델 기반의 데이터베이스로, [스키마]()와 [SQL]()을 사용합니다. NoSQL은 [비정형](), 대규모 데이터를 처리하기 위해 등장한 비관계형 데이터베이스입니다.
+RDBMS는 관계형 모델 기반의 데이터베이스로, [스키마](../Programming%20Terminology/README.md#스키마)와 [SQL](../Programming%20Terminology/README.md#sql)을 사용합니다. NoSQL은 [비정형](../Programming%20Terminology/README.md#비정형-데이터), 대규모 데이터를 처리하기 위해 등장한 비관계형 데이터베이스입니다.
 
-RDBMS는 정규화된 테이블 구조와 SQL을 사용해 데이터를 관리하며, [트랜잭션](#트랜잭션이란-무엇인가요)과 데이터 무결성을 보장합니다. 반면 NoSQL은 스키마가 유연하고 [JSON](), [Key-Value](), [Column](), [Graph]() 등 다양한 형태로 데이터를 저장할 수 있어 확장성이 뛰어납니다. 따라서 RDBMS는 은행.ERP처럼 정확성과 무결성이 중요한 곳에서 사용되고, NoSQL은 SNS, 로그 데이터, IoT처럼 대규모 데이터를 빠르게 처리하고 확장해야 하는 환경에서 강점을 가집니다.
+RDBMS는 정규화된 테이블 구조와 SQL을 사용해 데이터를 관리하며, [트랜잭션](#트랜잭션이란-무엇인가요)과 데이터 무결성을 보장합니다. 반면 NoSQL은 스키마가 유연하고 [JSON](../Programming%20Terminology/README.md#json), [Key-Value](../Programming%20Terminology/README.md#key-value), [Column](../Programming%20Terminology/README.md#column), [Graph](../Programming%20Terminology/README.md#graph) 등 다양한 형태로 데이터를 저장할 수 있어 확장성이 뛰어납니다. 따라서 RDBMS는 은행.ERP처럼 정확성과 무결성이 중요한 곳에서 사용되고, NoSQL은 SNS, 로그 데이터, IoT처럼 대규모 데이터를 빠르게 처리하고 확장해야 하는 환경에서 강점을 가집니다.
 
 ---
 ## 트랜잭션이란 무엇인가요?
@@ -106,7 +106,7 @@ Redis는 인메모리 기반의 키-값 데이터 저장소로 매우 빠른 읽
 ## 인덱스(Index)란 무엇이고, 장단점은 무엇인가요?
 인덱스는 테이블의 특정 컬럼에 대해 빠른 검색을 가능하게 해주는 자료구조입니다.
 
-인덱스는 주로 [B-Tree]() 또는 [Hash]() 구조로 구현되며, 데이터 검색 속도를 크게 향상시킵니다. 예를 들어 WHERE, JOIN, ORDER BY 절에서 효과적입니다. 하지만 인덱스는 추가적인 저장 공간을 필요로 하고, 데이터 삽입, 수정, 삭제 시 인덱스도 갱신해야 하므로 쓰기 성능은 떨어집니다. 따라서 모든 컬럼에 인덱스를 걸 수 없고, 조회 빈도와 쓰기 빈도를 고려해 전략적으로 사용해야 합니다.
+인덱스는 주로 [B-Tree](../Programming%20Terminology/README.md#b-tree) 또는 [Hash](../Programming%20Terminology/README.md#hash) 구조로 구현되며, 데이터 검색 속도를 크게 향상시킵니다. 예를 들어 WHERE, JOIN, ORDER BY 절에서 효과적입니다. 하지만 인덱스는 추가적인 저장 공간을 필요로 하고, 데이터 삽입, 수정, 삭제 시 인덱스도 갱신해야 하므로 쓰기 성능은 떨어집니다. 따라서 모든 컬럼에 인덱스를 걸 수 없고, 조회 빈도와 쓰기 빈도를 고려해 전략적으로 사용해야 합니다.
 
 ---
 ## 클러스터형 인덱스와 비클러스터형 인덱스의 차이는 무엇인가요?
@@ -139,7 +139,7 @@ Redis는 인메모리 기반의 키-값 데이터 저장소로 매우 빠른 읽
 ## 트랜잭션 격리 수준(4단계)을 설명해주세요.
 트랜잭션 격리 수준은 동시에 실행되는 트랜잭션 간에 데이터 접근 방식을 정의하는 규칙입니다.
 
-격리 수준은 [READ UNCOMMITTED](), [READ COMMITTED](), [REPEATABLE READ](), [SERIALIZABLE]() 네 가지가 있습니다. READ UNCOMMITTED는 커밋되지 않은 데이터도 읽을 수 있어 DIRTY READ가 발생합니다. READ COMMITTED는 커밋된 데이터만 읽지만 Non-Repeatable Read 문제가 있습니다. REPEATABLE READ는 동일 트랜잭션 내 같은 데이터를 항상 동일하게 보장합니다 SERIALIZABLE은 가장 높은 격리 수준으로 모든 트랜잭션을 직렬화해 실행합니다.
+격리 수준은 [READ UNCOMMITTED](../Programming%20Terminology/README.md#read-uncommitted), [READ COMMITTED](../Programming%20Terminology/README.md#read-committed), [REPEATABLE READ](../Programming%20Terminology/README.md#repeatable-read), [SERIALIZABLE](../Programming%20Terminology/README.md#serializable) 네 가지가 있습니다. READ UNCOMMITTED는 커밋되지 않은 데이터도 읽을 수 있어 DIRTY READ가 발생합니다. READ COMMITTED는 커밋된 데이터만 읽지만 Non-Repeatable Read 문제가 있습니다. REPEATABLE READ는 동일 트랜잭션 내 같은 데이터를 항상 동일하게 보장합니다 SERIALIZABLE은 가장 높은 격리 수준으로 모든 트랜잭션을 직렬화해 실행합니다.
 
 * 보충 설명 필요
 
