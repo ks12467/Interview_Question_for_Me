@@ -11,5 +11,7 @@
   - [운영체제](https://github.com/ks12467/Interview_Question_for_Me/tree/main/OS)
   - [네트워크](https://github.com/ks12467/Interview_Question_for_Me/tree/main/Network)
   - [데이터베이스](https://github.com/ks12467/Interview_Question_for_Me/tree/main/Database)
+  - [컴퓨터 구조](https://github.com/ks12467/Interview_Question_for_Me/tree/main/Computer%20Architecture)
+  - [개발 언어](https://github.com/ks12467/Interview_Question_for_Me/tree/main/Language)
 - ## ETC. 내가 몰랐던 개발 용어 정리집
   - [개발 용어 정리](https://github.com/ks12467/Interview_Question_for_Me/tree/main/Programming%20Terminology)
